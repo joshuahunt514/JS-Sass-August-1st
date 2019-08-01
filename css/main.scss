@@ -1,0 +1,86 @@
+$primary-color: rgb(99, 99, 99);
+$secondary-color: rgba(244, 244, 244, 0.575);
+$tertiary-color: rgba(105, 105, 105, 0.692);
+$span-color: rgba(78, 78, 78, 0.692);
+$new-color: rgba(6, 29, 158, 0.692);
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: $primary-color;
+  height: 400px;
+  width: 400px;
+  overflow: hidden;
+}
+
+/* Before Button Click */
+
+.box {
+  margin: 10px;
+  font-size: 0.8em;
+  .innerbox {
+    background-color: $secondary-color;
+    height: 100px;
+    width: 300px;
+    box-shadow: 2px 5px;
+    border: 1px solid black;
+    .inner-innerbox {
+      background-color: $tertiary-color;
+      height: 75px;
+      width: 250px;
+      position: relative;
+      top: 12%;
+      margin: 0 auto;
+      border: 1px solid black;
+      #text {
+        position: relative;
+        text-align: center;
+      }
+      #button {
+        position: absolute;
+        right: 0;
+        top: 45%;
+        height: 40px;
+        width: 250px;
+      }
+    }
+  }
+}
+
+/* After Button Click */
+
+.box-2 {
+  margin: 20px;
+  font-size: 1.3em;
+  line-height: 9em;
+  .innerbox {
+    background-color: $new-color;
+    height: 300px;
+    width: 450px;
+    box-shadow: 5px 10px;
+    border: 1px solid black;
+    .inner-innerbox {
+      background-color: $tertiary-color;
+      height: 250px;
+      width: 350px;
+      position: relative;
+      top: 12%;
+      margin: 0 auto;
+      border: 1px solid black;
+      #text {
+        position: relative;
+        text-align: center;
+      }
+      #button {
+        position: absolute;
+        right: 0;
+        top: 80%;
+        height: 50px;
+        width: 350px;
+      }
+    }
+  }
+}
